@@ -31,12 +31,24 @@ public final class BeerController {
   }
 
   @PostMapping
-  public ResponseEntity<Beer> create(Beer beer) {
+  public ResponseEntity<Beer> create(@RequestBody Beer beer) {
     final Beer createdBeer = beerService.create(beer);
 
     final HttpHeaders headers = new HttpHeaders();
-    headers.add("Location", "/api/v1/beer" + createdBeer.getId().toString());
+    headers.add("Location", "/api/v1/beer/" + createdBeer.getId().toString());
 
     return new ResponseEntity<>(headers, HttpStatus.CREATED);
+  }
+
+  @PutMapping({"/{id}"})
+  @ResponseStatus(HttpStatus.NO_CONTENT)
+  public void update(@PathVariable("id") UUID id, @RequestBody Beer beer) {
+    beerService.update(id, beer);
+  }
+
+  @DeleteMapping({"/{id}"})
+  @ResponseStatus(HttpStatus.NO_CONTENT)
+  public void delete(@PathVariable("id") UUID id) {
+    beerService.delete(id);
   }
 }
