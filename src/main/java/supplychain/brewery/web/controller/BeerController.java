@@ -15,11 +15,17 @@ import java.util.UUID;
 @RequestMapping("/api/v1/beer")
 public class BeerController {
 
+  // Services
+
   private final BeerService beerService;
+
+  // Constructors
 
   public BeerController(BeerService beerService) {
     this.beerService = beerService;
   }
+
+  // CRUD
 
   @GetMapping({"/{beerId}"})
   public ResponseEntity<BeerDto> getBeer(@PathVariable("beerId") UUID beerId) {

@@ -11,12 +11,10 @@ import java.util.UUID;
 @AllArgsConstructor
 @Data
 @Builder
-public class BeerDto {
+public class CustomerDto {
 
   // Fields
 
   private UUID id;
   private String name;
-  private String style;
-  private Long upc;
 }
