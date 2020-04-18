@@ -1,7 +1,7 @@
 package supplychain.brewery.services;
 
 import org.springframework.stereotype.Service;
-import supplychain.brewery.web.model.BeerDto;
+import supplychain.brewery.web.model.Beer;
 
 import java.util.UUID;
 
@@ -11,8 +11,8 @@ public class BeerServiceImpl implements BeerService {
   // Implementation
 
   @Override
-  public BeerDto getBeerById(UUID beerId) {
-    return BeerDto
+  public Beer getById(UUID beerId) {
+    return Beer
       .builder()
       .id(UUID.randomUUID())
       .name("Old Monk")

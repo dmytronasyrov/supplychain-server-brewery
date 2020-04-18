@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import supplychain.brewery.services.BeerService;
-import supplychain.brewery.web.model.BeerDto;
+import supplychain.brewery.web.model.Beer;
 
 import java.util.UUID;
 
@@ -27,8 +27,8 @@ public class BeerController {
 
   // CRUD
 
-  @GetMapping({"/{beerId}"})
-  public ResponseEntity<BeerDto> getBeer(@PathVariable("beerId") UUID beerId) {
-    return new ResponseEntity<>(beerService.getBeerById(beerId), HttpStatus.OK);
+  @GetMapping({"/{id}"})
+  public ResponseEntity<Beer> get(@PathVariable("id") UUID id) {
+    return new ResponseEntity<>(beerService.getById(id), HttpStatus.OK);
   }
 }

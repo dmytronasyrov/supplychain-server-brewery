@@ -1,9 +1,9 @@
 package supplychain.brewery.services;
 
-import supplychain.brewery.web.model.BeerDto;
+import supplychain.brewery.web.model.Beer;
 
 import java.util.UUID;
 
 public interface BeerService {
-  BeerDto getBeerById(UUID beerId);
+  Beer getById(UUID beerId);
 }
