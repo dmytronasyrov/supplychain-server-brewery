@@ -6,7 +6,7 @@ import supplychain.brewery.web.model.Beer;
 import java.util.UUID;
 
 @Service
-public class BeerServiceImpl implements BeerService {
+public final class BeerServiceImpl implements BeerService {
 
   // Implementation
 
@@ -17,6 +17,16 @@ public class BeerServiceImpl implements BeerService {
       .id(UUID.randomUUID())
       .name("Old Monk")
       .style("Pale Ale")
+      .build();
+  }
+
+  @Override
+  public Beer create(Beer beer) {
+    return Beer
+      .builder()
+      .id(UUID.randomUUID())
+      .name(beer.getName())
+      .style(beer.getStyle())
       .build();
   }
 }

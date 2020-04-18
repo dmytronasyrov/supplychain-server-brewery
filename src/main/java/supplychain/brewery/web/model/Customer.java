@@ -11,7 +11,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @Data
 @Builder
-public class Customer {
+public final class Customer {
 
   // Fields
 

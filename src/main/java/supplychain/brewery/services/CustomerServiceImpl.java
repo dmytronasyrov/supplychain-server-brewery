@@ -6,7 +6,7 @@ import supplychain.brewery.web.model.Customer;
 import java.util.UUID;
 
 @Service
-public class CustomerServiceImpl implements CustomerService {
+public final class CustomerServiceImpl implements CustomerService {
 
   // Implementation
 
