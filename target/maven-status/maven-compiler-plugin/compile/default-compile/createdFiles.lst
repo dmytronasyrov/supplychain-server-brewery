@@ -1,1 +1,12 @@
+supplychain/brewery/web/model/v1/Customer.class
+supplychain/brewery/web/model/v1/BeerStyle.class
+supplychain/brewery/web/model/v1/Beer.class
+supplychain/brewery/web/model/v1/Customer$CustomerBuilder.class
+supplychain/brewery/services/v1/CustomerServiceImpl.class
+supplychain/brewery/services/v1/BeerService.class
 supplychain/brewery/BreweryApplication.class
+supplychain/brewery/web/controller/v1/CustomerController.class
+supplychain/brewery/web/controller/v1/BeerController.class
+supplychain/brewery/services/v1/BeerServiceImpl.class
+supplychain/brewery/web/model/v1/Beer$BeerBuilder.class
+supplychain/brewery/services/v1/CustomerService.class

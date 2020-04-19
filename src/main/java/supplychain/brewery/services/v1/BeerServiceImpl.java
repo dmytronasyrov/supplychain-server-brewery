@@ -1,7 +1,8 @@
-package supplychain.brewery.services;
+package supplychain.brewery.services.v1;
 
 import org.springframework.stereotype.Service;
-import supplychain.brewery.web.model.Beer;
+import supplychain.brewery.web.model.v1.Beer;
+import supplychain.brewery.web.model.v1.BeerStyle;
 
 import java.util.UUID;
 
@@ -16,7 +17,7 @@ public final class BeerServiceImpl implements BeerService {
       .builder()
       .id(UUID.randomUUID())
       .name("Old Monk")
-      .style("Pale Ale")
+      .style(BeerStyle.ALE)
       .build();
   }
 
@@ -32,11 +33,21 @@ public final class BeerServiceImpl implements BeerService {
 
   @Override
   public Beer update(UUID id, Beer beer) {
-    return null;
+    return Beer
+      .builder()
+      .id(UUID.randomUUID())
+      .name(beer.getName())
+      .style(beer.getStyle())
+      .build();
   }
 
   @Override
   public Beer delete(UUID id) {
-    return null;
+    return Beer
+      .builder()
+      .id(UUID.randomUUID())
+      .name("Old Monk")
+      .style(BeerStyle.STOUT)
+      .build();
   }
 }

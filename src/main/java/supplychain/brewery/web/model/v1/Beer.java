@@ -1,4 +1,4 @@
-package supplychain.brewery.web.model;
+package supplychain.brewery.web.model.v1;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -17,6 +17,6 @@ public final class Beer {
 
   private UUID id;
   private String name;
-  private String style;
+  private BeerStyle style;
   private Long upc;
 }

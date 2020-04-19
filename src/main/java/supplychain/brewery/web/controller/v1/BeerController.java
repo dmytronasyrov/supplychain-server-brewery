@@ -1,11 +1,11 @@
-package supplychain.brewery.web.controller;
+package supplychain.brewery.web.controller.v1;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import supplychain.brewery.services.BeerService;
-import supplychain.brewery.web.model.Beer;
+import supplychain.brewery.services.v1.BeerService;
+import supplychain.brewery.web.model.v1.Beer;
 
 import java.util.UUID;
 
@@ -35,7 +35,7 @@ public final class BeerController {
     final Beer createdBeer = beerService.create(beer);
 
     final HttpHeaders headers = new HttpHeaders();
-    headers.add("Location", "/api/v1/beer/" + createdBeer.getId().toString());
+    headers.add(HttpHeaders.LOCATION, "/api/v1/beer/" + createdBeer.getId().toString());
 
     return new ResponseEntity<>(headers, HttpStatus.CREATED);
   }

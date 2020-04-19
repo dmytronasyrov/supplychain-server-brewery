@@ -1,4 +1,4 @@
-package supplychain.brewery.web.model;
+package supplychain.brewery.web.model.v1;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

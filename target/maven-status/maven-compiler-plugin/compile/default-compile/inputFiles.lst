@@ -1,1 +1,10 @@
+/Users/rudra/Projects/supply-chain/brewery/src/main/java/supplychain/brewery/web/controller/v1/CustomerController.java
+/Users/rudra/Projects/supply-chain/brewery/src/main/java/supplychain/brewery/web/controller/v1/BeerController.java
+/Users/rudra/Projects/supply-chain/brewery/src/main/java/supplychain/brewery/web/model/v1/Customer.java
+/Users/rudra/Projects/supply-chain/brewery/src/main/java/supplychain/brewery/services/v1/BeerService.java
+/Users/rudra/Projects/supply-chain/brewery/src/main/java/supplychain/brewery/web/model/v1/BeerStyle.java
+/Users/rudra/Projects/supply-chain/brewery/src/main/java/supplychain/brewery/services/v1/CustomerServiceImpl.java
+/Users/rudra/Projects/supply-chain/brewery/src/main/java/supplychain/brewery/services/v1/CustomerService.java
+/Users/rudra/Projects/supply-chain/brewery/src/main/java/supplychain/brewery/web/model/v1/Beer.java
+/Users/rudra/Projects/supply-chain/brewery/src/main/java/supplychain/brewery/services/v1/BeerServiceImpl.java
 /Users/rudra/Projects/supply-chain/brewery/src/main/java/supplychain/brewery/BreweryApplication.java

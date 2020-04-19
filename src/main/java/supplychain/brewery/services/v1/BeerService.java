@@ -1,6 +1,6 @@
-package supplychain.brewery.services;
+package supplychain.brewery.services.v1;
 
-import supplychain.brewery.web.model.Beer;
+import supplychain.brewery.web.model.v1.Beer;
 
 import java.util.UUID;
 
